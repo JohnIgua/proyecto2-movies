@@ -26,7 +26,7 @@ const getMovieById = (req, res) => {
 
 const postNewMovie = (req, res) => {
     const movieObj = req.body
-    moviesControllers.createBook(movieObj)
+    moviesControllers.createMovie(movieObj)
         .then((data) => {
             res.status(201).json(data)
         })
